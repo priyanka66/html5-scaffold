@@ -25,6 +25,7 @@
 <link href="css/details.css" rel="stylesheet">
 <link href="css/bordrss.css" rel="stylesheet">
 <link href="css/logo1.css" rel="stylesheet">
+<link href="css/signin.css" rel="stylesheet">
 
 
 
@@ -76,7 +77,8 @@
                     </div>
                       <div class ="col-md-8 col-sm-8 col-md-8">
                        <p align="right" class="aligning">Share your app idea. We will create a working application for you in under 24 hours. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, maiores sint possimus distinctio tenetur in magni animi pariatur sed. Register now for FREE trial</p>
-              <p><a class="btn btn-primary btn-lg craft" role="button">Contact Us</a></p> 
+              <p><button class="btn btn-primary btn-lg craft" data-toggle="modal" data-target="#myModal">Contact Us</button></p> 
+                               
                   
                     </div>
                   </div>               
@@ -95,7 +97,7 @@
                     </div>
            <div class ="col-md-6 col-sm-12 col-md-6">
               <p>Share your app idea. We will create a working application for you in under 24 hours. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, maiores sint possimus distinctio tenetur in magni animi pariatur sed. Register now for FREE trial</p>
-              <p><a class="btn btn-primary btn-lg craft" role="button">Contact Us</a></p> 
+              <p><button class="btn btn-primary btn-lg craft" data-toggle="modal" data-target="#myModal">Contact Us</button></p> 
             </div>
           </div>
           
@@ -113,7 +115,7 @@
                     </div>
            <div class ="col-md-6 col-sm-12 col-md-6">
               <p>Share your app idea. We will create a working application for you in under 24 hours. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, maiores sint possimus distinctio tenetur in magni animi pariatur sed. Register now for FREE trial</p>
-              <p><a class="btn btn-primary btn-lg craft" role="button">Contact Us</a></p> 
+            <p><button class="btn btn-primary btn-lg craft" data-toggle="modal" data-target="#myModal">Contact Us</button></p> 
             </div>
           
         </div>
@@ -234,7 +236,92 @@
 
 <center>      <h3 >CONTACT US</h3>
         <h2><b>Tell Us What Is On Your Mind</b> </h2>
-         <p><a class="btn btn-primary btn-lg craft" role="button">Contact Us</a></p> 
+<button class="btn btn-primary btn-lg craft" data-toggle="modal" data-target="#myModal">
+  Contact Us
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Contact Form</h4>
+      </div>
+      <div class="modal-body">
+         <form role="form">
+                    <div class="form-group has-success has-feedback">
+                  <label for="inputName" class="control-label">Name*</label>
+                  <input type="text" class="form-control" id="inputName" placeholder="What is your name? "> <span id="inputError"> </span>
+                    <div  id="inputError"> </div>
+                   <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+
+                </div>
+                
+
+
+                <div class="form-group has-feedback">
+                  <label for="inputEmail">Email*</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="What is your email address?">
+                  <span id="inputError"> </span>
+                    <div  id="inputError"> </div>
+                   <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                   
+                </div>
+                <div class="form-group has-success has-feedback">
+                  <label for="inputContact">Contact Number*</label>
+                  <input type="tel" class="form-control" id="inputContact" placeholder="Contact Number">
+                   <span id="inputError"> </span>
+                    <div  id="inputError"> </div>
+                   <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                </div>
+                <div class="form-group has-success has-feedback">
+                  <label for="inputAddress">Address*</label>
+                  <input type="text" class="form-control" id="inputAddress1" placeholder="Street Address 1">
+                  <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                   <input type="text" class="form-control" id="inputAddress2" placeholder="Street Address 2">
+                   <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                    <input type="text" class="form-control" id="inputCity" placeholder="City">
+                     <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                     <input type="text" class="form-control" id="inputPin" placeholder="Pincode">
+                      <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                      <input type="text" class="form-control" id="inputCountry" placeholder="Country">
+                       <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+
+
+                </div>
+                <div class="form-group">
+                  <label for="inputFromDate">From Date*</label>
+                  <input type="date" class="form-control" id="inputFromDate" placeholder="DD-MM-YYYY">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputToDate" >To Date*</label>
+                  <input type="date" class="form-control" id="inputToDate" placeholder="DD-MM-YYYY">
+                </div>
+                <div class="form-group">
+                  <label for="inputSubject">Subject*</label>
+                  <input type="text" class="form-control" id="inputSubject" placeholder="Please enter the subject">
+                </div>
+                <div class="form-group">
+                  <label for="inputMessage">Message*</label>
+                  <input type="text" class="form-control" id="inputMessage" placeholder="What do you want to tell us">
+                 </div>
+              </form>
+
+       
+    
+
+          </div>
+ 
+       <center> <button type="button" class="btn btn-default craft " id="buttonSave" >Save </button></center>
+       <center> <button type="button" class="btn btn-default craft" data-dismiss="modal">Close </button></center>
+        
+ 
+    </div>
+  </div>
+</div>
+ 
 </center>
 	
       
@@ -255,4 +342,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+     <script src="js/validate.js"></script>
+
+
 </body>
